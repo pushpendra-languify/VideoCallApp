@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon node src/server.js",
+    "deploy": "gh-pages -d dist",
+    "help": "gh-pages --help",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,5 +19,8 @@
     "peer": "^0.6.1",
     "socket.io": "^4.5.1",
     "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
